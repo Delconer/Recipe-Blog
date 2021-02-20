@@ -2,10 +2,12 @@
 
 Solución a desafío de Devchallenges.io
 
-Sencilla página responsive, realizada siguiendo el diseño del reto de devchallenges.io, desarrollado como practica básica de html, css y js , con el objetivo de realizar los desafíos de la página. 
+Sencilla página responsive, realizada siguiendo el diseño del reto de devchallenges.io, desarrollado como practica básica de html y css, con el objetivo de realizar los desafíos de la página. 
 ## Demo
 
 El proyecto puede ser visto en funcionamiento [aquí](https://recipe-page-delconer.netlify.app/ "aquí")
+
+[![](https://raw.githubusercontent.com/Delconer/Recipe-Blog/main/img/recipe-page.png)](https://recipe-page-delconer.netlify.app/)
 
 
 ### Desarrollado usando:
