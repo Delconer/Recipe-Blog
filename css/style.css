@@ -1,0 +1,366 @@
+:root {
+  /* Fuentes */
+  --font-1: 'Playfair Display', serif;
+  --font-2: 'Montserrat', sans-serif;
+
+  /* Colores */
+  --light-cream: #FAFAFA;
+  --dark-gray: #333333;
+  --medium-gray: #4F4F4F;
+  --light-gray: #C4C4C4;
+  --very-light-gray: #BDBDBD;
+  --footer: #828282;
+  --orange: #F2994A;
+
+}
+
+html {
+  /* 1rem = 10px */
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  background-color: var(--light-cream);
+}
+
+/* Utilidades */
+
+.container {
+  max-width: 100rem;
+  width: 95%;
+  margin: 0 auto;
+}
+
+/* Titulo */
+.title {
+  margin: 3rem 0;
+}
+
+.title h2 {
+  font-family: var(--font-1);
+  font-weight: 700;
+  font-size: 2.4rem;
+  margin-bottom: 1rem;
+}
+
+.descripcion {
+  display: flex;
+  align-items: flex-start;
+}
+
+.descripcion img {
+  margin-top: 0.5rem;
+  margin-right: 1rem;
+}
+
+.descripcion p {
+  color: var(--medium-gray);
+  font-family: var(--font-2);
+  font-weight: 500;
+  font-style: italic;
+  font-size: 1.2rem;
+  padding-right: 1rem;
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .title {
+    margin-bottom: 4rem;
+  }
+
+  .title h2 {
+    font-size: 4.8rem;
+    margin-bottom: 3rem;
+  }
+
+  .descripcion {
+    max-width: 65rem;
+  }
+
+  .descripcion p {
+    font-size: 1.4rem;
+  }
+}
+
+.hero {
+  max-width: 100%;
+  margin-bottom: 2rem;
+
+}
+
+@media (min-width: 768px) {
+  .hero{
+    margin-bottom: 4rem;
+  }
+}
+
+/* contenedor principal */
+
+@media (min-width: 768px) {
+  .contenido{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .info{
+    flex: 0 0 20%;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    padding: 4rem 0;
+    border-radius: 1.2rem;
+  }
+  .receta{
+    flex: 0 0 60%;
+  }
+}
+/* informacion de la receta */
+.info {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 4rem;
+}
+
+.porciones {
+  display: flex;
+  font-family: var(--font-2);
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.porciones h4 {
+  color: var(--light-gray);
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.porciones p {
+  color: var(--orange);
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+.cubiertos {
+  color: var(--orange);
+  font-size: 2rem;
+  margin-right: 0.5rem;
+}
+
+.tiempos {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+}
+
+.preparacion {
+  display: flex;
+  align-items: flex-start;
+  font-family: var(--font-2);
+}
+
+.preparacion h4 {
+  color: var(--light-gray);
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.preparacion p {
+  color: var(--dark-gray);
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+.reloj {
+  color: var(--medium-gray);
+  font-size: 2rem;
+  margin-right: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .porciones{
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: 4rem;
+  }
+  
+  .porciones h4 {
+    font-size: 1rem;
+  }
+  
+  .porciones p {
+    font-size: 1.4rem;
+  }
+  .cubiertos{
+    font-size: 2.5rem;
+  }
+  .tiempos {
+    display: block;
+    width: 100%;
+    margin: 0;
+  }
+  .preparacion{
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: 4rem;
+  }
+  .preparacion:last-of-type{
+    margin-bottom: 0;
+  }
+  .preparacion h4 {
+    font-size: 1rem;
+  }
+  
+  .preparacion p {
+    font-size: 1.4rem;
+  }
+  .reloj{
+    font-size: 2.5rem;
+  }
+
+}
+
+
+/* ingredientes */
+.ingredientes {
+
+  color: #333333;
+  font-family: var(--font-1);
+}
+
+.ingredientes h3 {
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+
+.ingredientes p {
+  font-size: 1.6rem;
+  font-style: italic;
+  margin: 3rem 0;
+}
+
+.ingrediente {
+  display: flex;
+  font-family: var(--font-2);
+  font-size: 1.4rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.ingrediente input {
+  margin-top: 0.5rem;
+  transform: scale(1.2);
+}
+
+.ingrediente label {
+  margin-left: 1rem;
+}
+
+.cheesecake7 {
+  font-style: italic;
+}
+
+.cheesecake7 span {
+  font-weight: 500;
+}
+
+@media (min-width: 768px) {
+  .ingredientes h3{
+    font-size: 2.4rem;
+  }
+  .ingredientes p{
+    font-size: 1.8rem;
+    margin: 4rem 0;
+  }
+
+  .ingrediente{
+    font-size: 1.6rem;
+  }
+
+  .ingrediente input {
+    transform: scale(1.5);
+  }
+  .ingrediente label {
+    margin-left: 2rem;
+  }
+}
+
+
+/* procedimiento */
+
+.procedimiento {
+  font-family: var(--font-2);
+}
+
+.instrucciones {
+  font-family: var(--font-1);
+  color: var(--dark-gray);
+  font-weight: 700;
+  font-size: 2.4rem;
+  margin: 3rem 0;
+}
+
+.paso {
+  display: flex;
+  margin-bottom: 2rem;
+}
+
+.numero {
+  align-self: flex-start;
+
+  color: white;
+  background-color: var(--orange);
+  font-family: var(--font-1);
+  font-size: 2.4rem;
+  font-weight: 700;
+  border-radius: 0.5rem;
+  min-width: 3.5rem;
+  height: 3.5rem;
+  text-align: center;
+  line-height: 1;
+  margin: 0 1.5rem 0 0;
+}
+
+.instruccion {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.instruccion span {
+  color: var(--dark-gray);
+  font-weight: 700;
+}
+
+.creditos {
+  margin-top: 3rem;
+}
+
+.fuente {
+  font-family: var(--font-2);
+  font-size: 1.2rem;
+  font-style: italic;
+  line-height: 1.5;
+  color: var(--very-light-gray);
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .fuente{
+    font-size: 1.6rem;
+  }
+  
+}
+
+footer p {
+  color: var(--footer);
+  font-family: var(--font-2);
+  font-size: 1.4rem;
+  text-align: center;
+  margin: 8rem auto 2rem auto;
+}
